@@ -13,14 +13,18 @@ const Searchbar = (props) => {
   };
 
   return (
-    <form ref={formRef} className={styles.container} onSubmit={onSubmit}>
+    <form
+      className={styles["search-container"]}
+      ref={formRef}
+      onSubmit={onSubmit}
+    >
       <input
+        className={styles["search-input"]}
         ref={inputRef}
         type="text"
-        className={styles.input}
         placeholder="Search"
       />
-      <button className={styles.button}>
+      <button className={styles["search-btn"]}>
         <i className="fas fa-magnifying-glass fa-xl"></i>
       </button>
     </form>

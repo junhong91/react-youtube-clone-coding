@@ -3,22 +3,22 @@ import styles from "../post-css/video.module.css";
 
 const Video = memo(({ video }) => {
   return (
-    <div className={styles["container"]}>
+    <div className={styles["video-container"]}>
       <img
-        className={styles["thumbnail"]}
-        src={video.snippet.thumbnails.high.url}
+        className={styles["video-thumbnail"]}
+        src={video?.snippet?.thumbnails?.high?.url}
         alt="youtube-thumbnail"
       />
-      <div className={styles["description-container"]}>
-        <div className={styles["description-sub-container"]}>
-          <div className={styles["description-video-title"]}>
-            {video.snippet.title}
+      <div className={styles["video-description-container"]}>
+        <div className={styles["video-description-sub-container"]}>
+          <div className={styles["video-description-title"]}>
+            {video?.snippet?.title}
           </div>
-          <div className={styles["description-channel-title"]}>
-            {video.snippet.channelTitle}
+          <div className={styles["video-description-channel-title"]}>
+            {video?.snippet?.channelTitle}
           </div>
-          <div className={styles["description-publish-time"]}>
-            {video.snippet.publishTime}
+          <div className={styles["video-description-publish-time"]}>
+            {video?.snippet?.publishTime}
           </div>
         </div>
       </div>

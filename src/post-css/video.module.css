@@ -1,46 +1,50 @@
-.container {
+.video-container {
   margin: 1rem 1rem;
   transition: 0.5s;
 }
 
-.container:hover {
+.video-container:hover {
   cursor: pointer;
   transform: translate(0, -1rem);
 }
 
-.thumbnail {
+.video-thumbnail {
   width: 22rem;
   height: 12rem;
+
   margin-bottom: 0.5rem;
 }
 
-.avatar {
+.video-avatar {
   width: 3rem;
   height: 3rem;
+
   margin-right: 1rem;
 }
 
-.description-container {
+.video-description-container {
   display: flex;
   align-items: center;
 }
 
-.description-sub-container {
+.video-description-sub-container {
   display: inline-block;
+
   max-width: 22rem;
 }
 
-.description-video-title {
+.video-description-title {
   font-size: 1rem;
+
   color: black;
 }
 
-.description-channel-title {
+.video-description-channel-title {
   font-size: 0.8rem;
   color: gray;
 }
 
-.description-publish-time {
+.video-description-publish-time {
   font-size: 0.8rem;
   color: gray;
 }

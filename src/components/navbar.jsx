@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../post-css/navbar.module.css";
 import Searchbar from "./searchbar";
-import YoutubeLogo from "./youtube-logo.jpg";
+import youtubeLogo from "./youtube-logo.jpg";
 
 const Navbar = (props) => {
   const handleLogoClick = () => {
@@ -13,10 +13,10 @@ const Navbar = (props) => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav className={styles["nav-container"]}>
       <img
-        src={YoutubeLogo}
-        className={styles.logo}
+        className={styles["nav-logo"]}
+        src={youtubeLogo}
         alt="youtube-logo"
         onClick={handleLogoClick}
       />

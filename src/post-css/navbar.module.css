@@ -1,4 +1,4 @@
-.container {
+.nav-container {
   /* How to position fixed the navbar when using flexbox
    * Read: https://stackoverflow.com/questions/40772841/how-to-position-fixed-the-navbar-when-using-flexbox
    */
@@ -7,18 +7,20 @@
   z-index: 100;
 
   display: flex;
-  padding: 1rem 1rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
+
+  padding: 1rem 1rem;
   border-bottom: 1px solid #e0e0e0;
+
+  background-color: white;
 }
 
-.logo {
+.nav-logo {
   width: 9.5rem;
 }
 
-.logo:hover {
+.nav-logo:hover {
   cursor: pointer;
 }

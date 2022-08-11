@@ -9,28 +9,36 @@ const App = () => {
 
   useEffect(() => {
     async function fetchVideos() {
-      const results = await YoutubeSearchApi.get("아이유");
-      for (let video of results.items) {
+      const searchResult = await YoutubeSearchApi.get("아이유");
+      if (!searchResult.items) {
+        console.log("⛔️ Fetched items are falsy");
+        return;
+      }
+
+      searchResult.items.map((video) =>
         setVideos((videos) => [
           ...videos,
           { id: video.id.videoId, snippet: video.snippet },
-        ]);
-      }
+        ])
+      );
     }
     fetchVideos();
   }, []);
 
   const handleSearch = useCallback(async (keyword) => {
     setVideos([]);
+    const searchResult = await YoutubeSearchApi.get(keyword);
+    if (!searchResult.items) {
+      console.log("⛔️ Fetched items are falsy");
+      return;
+    }
 
-    // TODO: Need to check if results.items exists
-    const results = await YoutubeSearchApi.get(keyword);
-    for (let video of results.items) {
+    searchResult.items.map((video) =>
       setVideos((videos) => [
         ...videos,
         { id: video.id.videoId, snippet: video.snippet },
-      ]);
-    }
+      ])
+    );
   }, []);
 
   return (

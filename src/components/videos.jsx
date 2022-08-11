@@ -4,9 +4,9 @@ import styles from "../post-css/videos.module.css";
 
 const Videos = ({ videos }) => {
   return (
-    <ul className={styles.container}>
+    <ul className={styles["videos-container"]}>
       {videos.map((video) => (
-        <Video key={video.id} video={video} />
+        <Video key={video?.id} video={video} />
       ))}
     </ul>
   );
