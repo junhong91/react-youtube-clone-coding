@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./app.css";
 import Navbar from "./components/navbar";
+import youtubeSearchApi from "./helper/api";
 
 class App extends Component {
-  handleSearch(keyword) {
-    console.log(keyword);
+  async handleSearch(keyword) {
+    const resp = await youtubeSearchApi.getVieos(keyword);
+    console.log(resp);
   }
 
   render() {
