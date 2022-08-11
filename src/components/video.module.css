@@ -2,8 +2,8 @@
   margin: 1rem 1rem;
 }
 
-.thumb-nail {
-  width: 20rem;
+.thumbnail {
+  width: 22rem;
   height: 12rem;
   margin-bottom: 0.5rem;
 }
@@ -19,7 +19,22 @@
   align-items: center;
 }
 
-.sub-description {
+.description-sub-container {
   display: inline-block;
-  max-width: 20rem;
+  max-width: 22rem;
+}
+
+.description-video-title {
+  font-size: 1rem;
+  color: black;
+}
+
+.description-channel-title {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.description-publish-time {
+  font-size: 0.8rem;
+  color: gray;
 }
