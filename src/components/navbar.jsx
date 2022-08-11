@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./navbar.module.css";
+import styles from "../post-css/navbar.module.css";
 import Searchbar from "./searchbar";
 import YoutubeLogo from "./youtube-logo.jpg";
 

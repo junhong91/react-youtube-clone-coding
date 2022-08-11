@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./searchbar.module.css";
+import styles from "../post-css/searchbar.module.css";
 
 const Searchbar = (props) => {
   const formRef = React.createRef();
@@ -13,7 +13,7 @@ const Searchbar = (props) => {
   };
 
   return (
-    <form ref={formRef} className={styles.searchContainer} onSubmit={onSubmit}>
+    <form ref={formRef} className={styles.container} onSubmit={onSubmit}>
       <input
         ref={inputRef}
         type="text"

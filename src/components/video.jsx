@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import styles from "./video.module.css";
+import styles from "../post-css/video.module.css";
 
 const Video = memo(({ video }) => {
   return (
