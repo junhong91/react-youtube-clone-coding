@@ -21,7 +21,7 @@ class YoutubeApi {
 }
 
 class YoutubeSearchApi extends YoutubeApi {
-  async getVieos(query) {
+  async get(query) {
     try {
       const resp = await this.api.get(this.getURL(), {
         params: {
