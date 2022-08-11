@@ -14,7 +14,7 @@ const App = () => {
         console.log("⛔️ Fetched items are falsy");
         return;
       }
-
+      console.log(searchResult.items);
       searchResult.items.map((video) =>
         setVideos((videos) => [
           ...videos,

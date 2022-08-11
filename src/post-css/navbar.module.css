@@ -25,3 +25,14 @@
 .nav-logo:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .nav-logo {
+    width: 6rem;
+  }
+}

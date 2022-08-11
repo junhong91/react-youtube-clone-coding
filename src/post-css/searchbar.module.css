@@ -34,5 +34,11 @@
 @media screen and (max-width: 768px) {
   .search-input {
     width: 9rem;
+    height: 2rem;
+  }
+
+  .search-btn {
+    width: 3rem;
+    height: 2.2rem;
   }
 }
