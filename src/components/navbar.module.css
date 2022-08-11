@@ -1,11 +1,10 @@
-/* Navbar */
-
-.navbar {
+.container {
   display: flex;
   padding: 1rem 1rem;
   flex-direction: row;
   justify-content: center;
-
+  align-items: center;
+  background-color: white;
   border-bottom: 1px solid #e0e0e0;
 }
 

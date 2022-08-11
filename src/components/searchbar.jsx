@@ -21,7 +21,7 @@ const Searchbar = (props) => {
         placeholder="Search"
       />
       <button className={styles.button}>
-        <i className="fas fa-magnifying-glass"></i>
+        <i className="fas fa-magnifying-glass fa-xl"></i>
       </button>
     </form>
   );

@@ -13,7 +13,7 @@ const Navbar = (props) => {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.container}>
       <img
         src={YoutubeLogo}
         className={styles.logo}
