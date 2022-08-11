@@ -1,5 +1,11 @@
 .container {
   margin: 1rem 1rem;
+  transition: 0.5s;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: translate(0, -1rem);
 }
 
 .thumbnail {
