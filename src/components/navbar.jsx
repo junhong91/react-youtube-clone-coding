@@ -21,6 +21,7 @@ const Navbar = (props) => {
         onClick={handleLogoClick}
       />
       <Searchbar onSearch={handleSearch} />
+      <div>Dummy :)</div>
     </nav>
   );
 };
