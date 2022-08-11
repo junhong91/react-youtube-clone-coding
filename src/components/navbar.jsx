@@ -4,13 +4,22 @@ import Searchbar from "./searchbar";
 import YoutubeLogo from "./youtube-logo.jpg";
 
 const Navbar = (props) => {
+  const handleLogoClick = () => {
+    console.log("Youtube logo clicked!");
+  };
+
   const handleSearch = (keyword) => {
     props.onSearch(keyword);
   };
 
   return (
     <nav className={styles.navbar}>
-      <img src={YoutubeLogo} className={styles.logo} alt="youtube-logo" />
+      <img
+        src={YoutubeLogo}
+        className={styles.logo}
+        alt="youtube-logo"
+        onClick={handleLogoClick}
+      />
       <Searchbar onSearch={handleSearch} />
     </nav>
   );
