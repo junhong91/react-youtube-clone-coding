@@ -1,4 +1,11 @@
 .container {
+  /* How to position fixed the navbar when using flexbox
+   * Read: https://stackoverflow.com/questions/40772841/how-to-position-fixed-the-navbar-when-using-flexbox
+   */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   display: flex;
   padding: 1rem 1rem;
   flex-direction: row;
