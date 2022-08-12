@@ -1,9 +1,13 @@
 import React, { memo } from "react";
 import styles from "../post-css/video.module.css";
 
-const Video = memo(({ video }) => {
+const Video = memo(({ video, onClick }) => {
+  const handlLoadVideo = async () => {
+    onClick(video);
+  };
+
   return (
-    <div className={styles["video-container"]}>
+    <div className={styles["video-container"]} onClick={handlLoadVideo}>
       <img
         className={styles["video-thumbnail"]}
         src={video?.snippet?.thumbnails?.high?.url}

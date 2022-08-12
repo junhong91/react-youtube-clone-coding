@@ -14,7 +14,7 @@ const App = () => {
         console.log("⛔️ Fetched items are falsy");
         return;
       }
-      console.log(searchResult.items);
+
       searchResult.items.map((video) =>
         setVideos((videos) => [
           ...videos,
@@ -41,10 +41,14 @@ const App = () => {
     );
   }, []);
 
+  const handleClickVideo = useCallback((video) => {
+    console.log(video);
+  }, []);
+
   return (
     <>
       <Navbar onSearch={handleSearch} />
-      <Videos videos={videos} />
+      <Videos videos={videos} onClick={handleClickVideo} />
     </>
   );
 };
